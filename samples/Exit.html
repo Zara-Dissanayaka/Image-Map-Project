@@ -1,9 +1,37 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>
-            Exit
-        </title>
+        <title>Exit</title>
+      <style> 
+        .map-wrapper {
+            position: relative;
+            display: inline-block;
+            margin-top: 20px;
+            width: 50%; 
+            max-width: 600px
+        }
+        .map-wrapper img {
+        max-height: 80vh;
+        width: 100%;      
+        border-radius: 3%;
+        display: block;
+        }
+        .center-label {
+            position: absolute;
+            top: 10%; 
+            left: 50%;
+            transform: translateX(-50%);
+            color: rgb(17, 10, 10);
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-family: Calibri, sans-serif;
+            font-size: 25px;
+            font-weight: bold;
+            pointer-events: none;
+            white-space: nowrap;
+        }
+        </style>
     </head>
     <body style="background-image: url('images/100.jpg');background-size: cover;background-repeat: no-repeat;">
 
@@ -11,7 +39,10 @@
         <P style="color:rgba(255, 255, 255, 0.816); font-family:calibri ;font-size: 145%; text-align: right;margin-top: -10%; "> FROM MAIN ENTRENCE TO ADMIN BUILDING &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</P>
         
         <div style="text-align: center;">
-        <img src="images/Exit.jpeg" alt="Exit" size="width:960;height:567;" style="margin-top:20px; width: 100%; height:-400cm;">
+            <div class="map-wrapper">
+                <img src="images/Exit.jpeg" alt="Exit" size="width:960;height:567;" style="margin-top:20px; width: 100%; height:-400cm;">
+                <div class="center-label">Exit</div>
+            </div>
         </div>
         <button onclick="location.href='insideC.html'">Hall</button>
     </body>
