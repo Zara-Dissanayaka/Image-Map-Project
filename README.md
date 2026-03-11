@@ -1,2 +1,3 @@
 # Image-Map-Project
-ඉරිදා upload  කරන එක!
+the image map project using html
+
